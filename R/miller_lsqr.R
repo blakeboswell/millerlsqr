@@ -33,18 +33,13 @@ miller_lsqr <- function(np) {
   tol_set <- FALSE
   nobs    <- 0L
   
+  
   some_checks <- function(np, nrbar) {
-    
     ier <- 0L
-    
-    if(np < 1){
-      ier <- 1L
-    }
-    
+    if(np < 1){ ier <- 1L }
     if(nrbar < np * (np - 1) / 2) {
       ier <- ier + 2
     }
-    
     ier
   }
   
