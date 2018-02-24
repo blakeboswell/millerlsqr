@@ -1,9 +1,9 @@
+# `millerlsqr`
+
 ## About
 
-[miller_lsqr.R](https://github.com/blakeboswell/millerlsqr/blob/master/R/miller_lsqr.R) is a translation of the [AS274 Fortran implementation](https://github.com/cran/biglm/blob/master/src/boundedQRf.f) in the R package `biglm`.
+The script [R/miller_lsqr.R](https://github.com/blakeboswell/millerlsqr/blob/master/R/miller_lsqr.R) is a translation of the Alan Miller's [AS274 Fortran implementation](https://github.com/cran/biglm/blob/master/src/boundedQRf.f) employed in the R package `biglm`.
 
 The other scripts / functions are copied and minimally modified from `biglm` for ease of testing purposes.  The scripts are also structured as a package for convenience .. I don't recommend installing and using this as a package.
 
-## Why?
-
-I wanted to understand AS274.  Translating from Fortran to R improved that understanding.
+The purpose of this script is to expose AS274 in a language that is not ALL CAPS.  I have to admit though, my opinion of Fortran has improved as a result of this effort.
